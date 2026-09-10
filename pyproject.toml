@@ -10,6 +10,11 @@ requires-python = ">=3.10"
 dependencies = [
 ]
 
+[project.scripts]
+fault-tolerance-attacker = "main:main"
+
+[tool.poetry]
+packages = [{ include = "main.py" }]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
